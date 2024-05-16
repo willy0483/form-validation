@@ -6,8 +6,68 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/javascript.js" defer></script>
+
+    <!-- GOOGLE-FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&family=Cinzel+Decorative:wght@400;700;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Nanum+Myeongjo&family=New+Tegomin&family=Noto+Sans+SC:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Shadows+Into+Light+Two&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
 </head>
 <body>
+    <section id="formContainer">
+        <form>
+            <fieldset>
+                <a href="#" id="closeSignUp">&#x2715;</a>
+                <label id="labelUsername" for="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="txt.username"
+                    placeholder="Dit username"
+                    required
+                    autocomplete="username"
+                />
     
+                <label id="labelPassword" for="password">Adgangskode</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="txt.password"
+                    required
+                    autocomplete="current-password"
+                />
+    
+                <label id="labelEmail" for="email">Email</label>
+                <input 
+                    type="email" 
+                    id="email"
+                    name="txt.email"
+                    placeholder="@Email" 
+                    required 
+                    autocomplete="email"
+                />
+    
+                <button id="submitButton" type="submit">Tilmeld</button>
+            </fieldset>
+    
+            <section id="respons"></section>
+        </form>
+    </section>
+<main>
+    <header class="header-main">
+        <hgroup>
+            <h1>Form</h1>
+            <h2>Validation</h2>
+        </hgroup>
+    </header>
+    <nav class="nav-main">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#" id="signUp">Sign Up</a></li>
+        </ul>
+    </nav>
+</main>
 </body>
 </html>
