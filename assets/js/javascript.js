@@ -179,15 +179,6 @@ function validateSignInForm() {
   }
 }
 
-
-
-
-
-
-
-
-
-
 // gallerykarusel
 
 let myForwardButton = document.getElementById("forward");
@@ -200,7 +191,7 @@ let imageArray = [
   "assets/images/Uploads/berserk-Four.jpg",
 ];
 
-let galleryImageElement = document.getElementById('galleryImage');
+let galleryImageElement = document.getElementById("galleryImage");
 let modal = document.getElementById("imageModal");
 let modalImg = document.getElementById("modalImage");
 let span = document.getElementsByClassName("close")[0];
@@ -209,20 +200,20 @@ let currentImage = 0;
 
 galleryImageElement.src = imageArray[currentImage];
 
-galleryImageElement.addEventListener('click', (e) => {
+galleryImageElement.addEventListener("click", (e) => {
   modal.style.display = "block";
   modalImg.src = e.target.src;
 });
 
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
-}
+};
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 myForwardButton.addEventListener("click", (e) => {
   currentImage = currentImage + 1;
 
@@ -241,8 +232,7 @@ myBackButton.addEventListener("click", (e) => {
   changeImage();
 });
 
-
 function changeImage() {
-  console.log(imageArray[currentImage]);
+  // console.log(imageArray[currentImage]);
   galleryImageElement.src = imageArray[currentImage];
 }
