@@ -213,6 +213,8 @@ body {
 }
 
 .gallery-Karusel .nav-buttons a {
+  width: 21px;
+  height: 21px;
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;

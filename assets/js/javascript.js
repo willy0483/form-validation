@@ -194,7 +194,6 @@ let imageArray = [
 let galleryImageElement = document.getElementById("galleryImage");
 let modal = document.getElementById("imageModal");
 let modalImg = document.getElementById("modalImage");
-let span = document.getElementsByClassName("close")[0];
 
 let currentImage = 0;
 
@@ -205,12 +204,8 @@ galleryImageElement.addEventListener("click", (e) => {
   modalImg.src = e.target.src;
 });
 
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == modal) {
+window.onclick = function (e) {
+  if (e.target == modal) {
     modal.style.display = "none";
   }
 };
@@ -236,3 +231,6 @@ function changeImage() {
   // console.log(imageArray[currentImage]);
   galleryImageElement.src = imageArray[currentImage];
 }
+
+
+
