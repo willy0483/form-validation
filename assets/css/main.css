@@ -58,7 +58,7 @@ body {
 
 .nav-main ul li a:hover {
   background-color: var(--deep-blue);
-  transform: scale(1.05); /* Increase size on hover for a subtle effect */
+  transform: scale(1.05);
 }
 
 /* #endregion */
